@@ -40,10 +40,7 @@ const HumanResourcesSettingPage = () => {
 
   return (
     <main>
-      <TabsComponent
-        tabSource={tabSource}
-        setSelectedSubTab={setSelectedSubTab}
-      />
+      <TabsComponent tabSource={tabSource} />
 
       {menu == 'structures' ? <Structures /> : <Recruitements />}
     </main>

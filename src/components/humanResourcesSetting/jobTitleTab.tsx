@@ -54,7 +54,7 @@ const JobTitleTab = () => {
       </Table.Td>
       <Table.Td>{element.jobTitleCode}</Table.Td>
       <Table.Td>{element.jobTitleName}</Table.Td>
-      <Table.Td className="flex justify-end gap-2 text-right">
+      <Table.Td className="flex justify-end gap-2">
         <ThemeIcon color="red" variant="light">
           <IconTrash />
         </ThemeIcon>

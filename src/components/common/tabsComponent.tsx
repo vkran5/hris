@@ -2,14 +2,13 @@ import { HRSettingTabProps } from '@/types/tabs';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const TabsComponent = ({ tabSource, setSelectedSubTab }: HRSettingTabProps) => {
+const TabsComponent = ({ tabSource }: HRSettingTabProps) => {
   const navigate = useNavigate();
   const query = new URLSearchParams(location.search);
   const menu = query.get('menu') || 'structures';
 
   const handleTabChange = (tab: string) => {
     navigate(`/settings/hr?menu=${tab}`);
-    setSelectedSubTab(tab == 'structures' ? 'jobPosition' : 'recruitmentStage');
   };
 
   return (

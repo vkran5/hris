@@ -7,5 +7,4 @@ export interface HRSettingTabs {
 
 export interface HRSettingTabProps {
   tabSource: HRSettingTabs[];
-  setSelectedSubTab: React.Dispatch<React.SetStateAction<string>>;
 }

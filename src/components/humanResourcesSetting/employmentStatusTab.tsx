@@ -54,7 +54,7 @@ const EmploymentStatusTab = () => {
       </Table.Td>
       <Table.Td>{element.statusCode}</Table.Td>
       <Table.Td>{element.statusName}</Table.Td>
-      <Table.Td className="flex justify-end gap-2 text-right">
+      <Table.Td className="flex justify-end gap-2">
         <ThemeIcon color="red" variant="light">
           <IconTrash />
         </ThemeIcon>
