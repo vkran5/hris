@@ -1,0 +1,57 @@
+:root {
+  --light-dark-border: var(--mantine-color-gray-2);
+  --light-dark-bg: var(--mantine-color-white);
+  --light-dark-hover-bg: var(--mantine-color-gray-0);
+}
+
+[data-theme='dark'] {
+  --light-dark-border: var(--mantine-color-dark-4);
+  --light-dark-bg: var(--mantine-color-dark-6);
+  --light-dark-hover-bg: var(--mantine-color-dark-5);
+}
+
+.tab {
+  position: relative;
+  border: 1px solid var(--light-dark-border);
+  background-color: var(--light-dark-bg);
+}
+
+.tab:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+:root[dir='rtl'] .tab:first-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+.tab:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+:root[dir='rtl'] .tab:last-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.tab + .tab {
+  border-left-width: 0;
+}
+
+:root[dir='rtl'] .tab + .tab {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+.tab:hover {
+  background-color: var(--light-dark-hover-bg);
+}
+
+.tab[data-active] {
+  z-index: 1;
+  background-color: var(--mantine-color-blue-filled);
+  border-color: var(--mantine-color-blue-filled);
+  color: var(--mantine-color-white);
+}
+
+.tab[data-active]:hover {
+  background-color: var(--mantine-color-blue-filled-hover);
+}
